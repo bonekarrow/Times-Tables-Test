@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!-- $Revision: 100 $; $Date: 2017-06-06 13:38:09 +0100 (Tue, 06 Jun 2017) $-->
+<html>
+<head>
+<link rel='stylesheet' type='text/css' href='main.css'>
+<link rel='stylesheet' type='text/css' href='questions.css'>
+<link rel='stylesheet' type='text/css' media='print' href='print.css'>
+<title>Times Tables Quiz</title>
+</head>
+<body>
+    <h1 class='notPrinting'>Times Tables Quiz</h1>
+
+    <div id='quiz'>
+        <p class="notPrinting">
+            Please answer the following questions (on <span id='timesTablesSelected'></span> times tables):
+        </p>
+        <table>
+            <tbody id='questionsTable'>
+            </tbody>
+        </table>
+        <p class='notPrinting'>
+            <button id='markButton' disabled='true' onclick='markQuestions()'>Mark</button>
+            <button id='newQuiz' onclick='location.reload()'>New Quiz</button>
+            <span id='message'></span>
+        </p>
+        <p class='notPrinting'>
+            <a href='configure.html'>Change</a> the times tables being tested. <a href='help.html'>Help</a>
+        </p>
+    </div>
+    <div id='configure'>
+        <p>There are no times tables selected for the quiz. Probably because you haven't used it before.</p>
+        <p>Please <a href='configure.html'>choose</a> the times tables and number of questions, or you might want some 
+           <a href='help.html'>help</a></p>
+    </div>
+
+    <script type='text/javascript' src='storeConfiguration.js'></script>
+    <script type='text/javascript' src='numerators.js'></script>
+    <script type='text/javascript' src='questions.js'></script>
+    <script type='text/javascript'>
+        populateQuizTable();
+    </script>
+</body>
+</html>
+

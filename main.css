@@ -1,0 +1,44 @@
+/*
+ * This is the main cascading stylesheet used by all pages.
+ * 
+ * $Revision: 93 $; $Date: 2017-05-22 21:58:20 +0100 (Mon, 22 May 2017) $
+ *
+ */
+
+body, input, button {
+    font: 20px arial, sans-serif;
+}
+
+h1 {
+    font-size: 1.5em;
+    text-align: center;
+    color: SlateBlue;
+}
+
+h2 {
+    font-size: 1.25em;
+    color: SlateBlue;
+}
+
+a {
+    color: White;
+    background-color: LimeGreen;
+    border: 1px solid White;
+    text-decoration: none;  
+    padding: 0.25em;
+}
+
+a:hover {
+    color: LimeGreen;
+    background-color: White;
+    border: 1px solid LimeGreen;
+}
+
+code {
+    color: DarkGreen;
+    font-weight: bold;
+}
+
+body {
+    background-color: AntiqueWhite;
+}

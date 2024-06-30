@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!-- $Revision: 98 $; $Date: 2017-06-04 22:22:16 +0100 (Sun, 04 Jun 2017) $-->
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="main.css">
+<link rel="stylesheet" type="text/css" href="configure.css">
+<title>Times Tables Quiz - Configure</title>
+</head>
+<body>
+    <h1>Configure the Quiz</h1>
+
+    <p>
+        This web page stores the configuration of the quiz in <a href='https://en.wikipedia.org/wiki/HTTP_cookie'>cookies</a>. The quiz can only work 
+        if you agree to this. The only information stored are the times tables to be used in the quiz and the number of questions.
+    </p>
+    <p class='userInput'>
+        <input type="checkbox" id="acceptCookies" onclick="cookiesSelectionChanged()">
+            I accept the use of cookies to store the configuration of the times tables quiz.
+        </input>
+    </p>
+
+    <p>Please select the times tables you'd like to be included in the quiz.</p>
+
+    <table class='userInput'>
+        <tbody>
+            <tr>
+                <td><button id='include1' disabled='true' onclick='timesTablesSelectionChanged(this)'>1</button></td>
+                <td><button id='include2' disabled='true' onclick='timesTablesSelectionChanged(this)'>2</button></td>
+                <td><button id='include3' disabled='true' onclick='timesTablesSelectionChanged(this)'>3</button></td>
+                <td><button id='include4' disabled='true' onclick='timesTablesSelectionChanged(this)'>4</button></td>
+            </tr>
+            <tr>
+                <td><button id='include5' disabled='true' onclick='timesTablesSelectionChanged(this)'>5</button></td>
+                <td><button id='include6' disabled='true' onclick='timesTablesSelectionChanged(this)'>6</button></td>
+                <td><button id='include7' disabled='true' onclick='timesTablesSelectionChanged(this)'>7</button></td>
+                <td><button id='include8' disabled='true' onclick='timesTablesSelectionChanged(this)'>8</button></td>
+            </tr>
+            <tr>
+                <td><button id='include9' disabled='true' onclick='timesTablesSelectionChanged(this)'>9</button></td>
+                <td><button id='include10' disabled='true' onclick='timesTablesSelectionChanged(this)'>10</button></td>
+                <td><button id='include11' disabled='true' onclick='timesTablesSelectionChanged(this)'>11</button></td>
+                <td><button id='include12' disabled='true' onclick='timesTablesSelectionChanged(this)'>12</button></td>
+            </tr>
+        </tbody>
+    </table>
+
+    <p>
+        How many questions:
+        <input type='number' id='count' min='1' disabled='true' value='40' onchange='configurationChanged()' />
+    </p>
+    <p>
+        What sort of questions are to be included (choose one or more):
+    </p>
+    <p class='userInput'>
+        <input type='checkbox' id='includePlain' disabled='true' checked='true' onclick='configurationChanged()'>
+            plain times tables questions;
+        </input>
+    </p>
+    <p class='userInput'>
+        <input type='checkbox' id='includeSquares' disabled='true' onclick='configurationChanged()'>
+            squares and square roots;
+        </input>
+    </p>
+    <p class='userInput'>
+        <input type='checkbox' id='includeDecimals' disabled='true' onclick='configurationChanged()'>
+            decimal fractions;
+        </input>
+    </p>
+    <p class='userInput'>
+        <input type='checkbox' id='includeVulgars' disabled='true' onclick='configurationChanged()'>
+            vulgar fractions;
+        </input>
+        <input type='checkbox' id='includeHarderInVulgars' disabled='true' onclick='configurationChanged()'>
+            including harder ones.
+        </input>
+    </p>
+    <p>
+        By default the quiz uses four columns. This works well on desktop / laptop computers, but can be too big for mobile devices.
+        You can use the following setting to restrict the number of columns on mobile devices (e.g. phones and tablets).
+    </p>
+    <p class='userInput'>
+        Display using
+        <select id='columnCount' disabled='true' onchange='configurationChanged()'>
+            <option value='1'>one column</option>
+            <option value='2'>two columns</option>
+            <option value='3'>three columns</option>
+            <option value='4' selected>four columns</option>
+        </select>
+    <p>
+    </p>
+    <p>
+        <a href='index.html'>Return to the quiz</a> <a href='help.html'>Help</a>
+    </p>
+
+    <script type='text/javascript' src='storeConfiguration.js'></script>
+    <script type='text/javascript' src='configure.js'></script>
+</body>
+</html>
+
+
+
+
+

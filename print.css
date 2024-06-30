@@ -1,0 +1,15 @@
+/*
+ * This is the cascading stylesheet for printing.
+ * 
+ * $Revision: 87 $; $Date: 2017-05-22 08:11:57 +0100 (Mon, 22 May 2017) $
+ *
+ */
+
+*.notPrinting {
+    display: none;
+}
+
+input {
+    border: solid black 1px;
+}
+

@@ -1,0 +1,68 @@
+/*
+ * This is the cascading style sheet for the times tables quiz.
+ * 
+ * $Revision: 92 $; $Date: 2017-05-22 15:31:41 +0100 (Mon, 22 May 2017) $
+ *
+ */
+
+span.squareRoot {
+    text-decoration: overline;
+}
+
+button {
+    background-color: SlateBlue;
+    padding: 0.25em;
+    margin: 0.25em;
+}
+
+input {
+    color: Magenta;
+}
+
+table {
+    width: 100%;
+}
+
+td input {
+    width: 3em;
+    text-align: center;
+}
+
+td {
+    text-align: right;
+    padding-top: 0.125em;
+    padding-bottom: 0.125em;
+}
+
+td.index {
+    text-align: right;
+    font-weight: bold;
+}
+
+td.square {
+    text-align: right
+}
+
+td.square sup {
+    font-size: 75%;
+}
+
+table.vulgarFraction {
+    width: auto;
+    /* Make the fraction appear on the right. 'text-align' does not affect contained tables. */
+    float: right;
+    font-size: 90%;
+}
+
+table.vulgarFraction td {
+    text-align: center;
+    padding: 0em 0em 0em 0em;
+}
+
+table.vulgarFraction tr:first-child td {
+    border-bottom: black solid 2px;
+}
+
+div#quiz, div#configure {
+    display: none;
+}
